@@ -9,14 +9,14 @@ import json
 import re
 
 st.title('CSV Analyzer')
-OPENAI_API_KEY = ""
-OPENAI_API_KEY = st.text_input("Please enter your OpenAI API Key here")
+apikey = ""
+apikey = st.text_input("Please enter your OpenAI API Key here")
 if st.button("Send", key="send_api_key"):
-    if OPENAI_API_KEY.strip():
+    if apikey.strip():
         st.success("Successfully updated api key")
 uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 
-
+OPENAI_API_KEY = apikey
 client = OpenAI(api_key=OPENAI_API_KEY)
 embedding_model = OpenAIEmbeddings(model="text-embedding-3-large", api_key=OPENAI_API_KEY)
 llm = ChatOpenAI(model="gpt-3.5-turbo-0125", temperature=0, api_key=OPENAI_API_KEY)
