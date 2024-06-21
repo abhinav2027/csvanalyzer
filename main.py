@@ -17,8 +17,6 @@ if st.button("Send", key="send_api_key"):
 uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 
 
-
-OPENAI_API_KEY = "sk-proj-b6UXrMVgMC3kzsstlOeuT3BlbkFJuWfwIB5R4jab1KtBVGiZ"
 client = OpenAI(api_key=OPENAI_API_KEY)
 embedding_model = OpenAIEmbeddings(model="text-embedding-3-large", api_key=OPENAI_API_KEY)
 llm = ChatOpenAI(model="gpt-3.5-turbo-0125", temperature=0, api_key=OPENAI_API_KEY)
