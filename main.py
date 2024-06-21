@@ -134,7 +134,7 @@ if apikey and uploaded_file is not None:
             if response_message:
                 text, code = extract_text_and_code(response_message["message"])
                 if text:
-                    st.text(text)
+                    st.markdown(text)
                 if code:
                     exec(code)
 

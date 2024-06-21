@@ -5,3 +5,5 @@ langchain
 langchain_openai
 langchain_community
 langchain_chroma
+seaborn
+matplotlib
