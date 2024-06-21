@@ -1,9 +1,9 @@
-streamlit=1.33.0
-pandas=2.0.3
-openai=0.27.2
-langchain=0.0.217
+streamlit==1.33.0
+pandas==2.0.3
+openai==0.27.2
+langchain==0.0.217
 langchain_openai
-langchain_community=0.0.12
-langchain_chroma=0.0.15
-seaborn=0.12.2
-matplotlib=3.7.1
+langchain_community==0.0.12
+langchain_chroma==0.0.15
+seaborn==0.12.2
+matplotlib==3.7.1
